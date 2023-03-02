@@ -1,5 +1,5 @@
-GET http://oberlin.edu
+GET http://localhost:3000/products.json
 
 
 ###
-GET https://data.cityofchicago.org/resource/xzkq-xp2w.json
+GET http://localhost:3000/products/2.json
