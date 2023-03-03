@@ -1,28 +1,28 @@
-GET http://localhost:3000/products.json
+GET http://localhost:3000/songs.json
 
 
 ###
-GET http://localhost:3000/products/5.json
+GET http://localhost:3000/songs/3.json
 
 ###
 
-POST http://localhost:3000/products.json
+POST http://localhost:3000/songs.json
 Content-Type: application/json
 
 {
-  "name": "Gloves",
-  "price": 12,
-  "image_url": "https://cdn.pixabay.com/photo/2015/11/07/17/20/hands-1032312_1280.jpg",
-  "description": "My hands. So cold."
+  "title": "Toy",
+  "artist": "Netta",
+  "year": 2018,
+  "country": "Israel"
 }
 
 ###
-PATCH http://localhost:3000/products/5.json
+PATCH http://localhost:3000/songs/5.json
 Content-Type: application/json
 
 {
-  "name": "Fancy Gloves"
+  "album": "Bassa Sababa"
 }
 
 ###
-DELETE http://localhost:3000/products/5.json
+DELETE http://localhost:3000/songs/5.json
