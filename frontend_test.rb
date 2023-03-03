@@ -1,10 +1,8 @@
-GET http://localhost:3000/products.json
+require "http"
+require "tty-prompt"
 
 
-###
-GET http://localhost:3000/products/5.json
 
-###
 
 POST http://localhost:3000/products.json
 Content-Type: application/json
@@ -14,12 +12,4 @@ Content-Type: application/json
   "price": 12,
   "image_url": "https://cdn.pixabay.com/photo/2015/11/07/17/20/hands-1032312_1280.jpg",
   "description": "My hands. So cold."
-}
-
-###
-PATCH http://localhost:3000/products/5.json
-Content-Type: application/json
-
-{
-  "name": "Fancy Gloves"
 }
